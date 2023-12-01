@@ -1,0 +1,1 @@
+with open("input.txt") as inFile: print(sum([int("".join([c for c in line if c in [str(i) for i in range(0, 10)]])[0] + "".join([c for c in line if c in [str(i) for i in range(0, 10)]])[-1]) for line in inFile.readlines()]))
